@@ -20,7 +20,9 @@ input.addEventListener("keydown", async function (e) {
     });
     input.removeAttribute("disabled");
     input.setAttribute("placeholder", "Type your city, e.g. 'Kosice'");
-    input.focus();
+    if (window.innerWidth > 700) {
+      input.focus();
+    }
   }
 })
 

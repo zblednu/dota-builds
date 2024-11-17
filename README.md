@@ -1,1 +1,1 @@
-https://zblednu.github.io/dota-builds/
+https://zblednu.github.io/weather-forecast/

@@ -12,10 +12,9 @@ export default async function getBuild(text) {
       "messages": [
         {
           "role": "user",
-          "content": `Make me a DOTA 2 item build for ${text} hero, try to make it as short as possible, if there's no such hero in DOTA 2 simply respond with "invalid hero"`
+          "content": `Provide brief (100 words top) weather forecast for ${text} for today, if there's no such city respond with "Incorrect city"`
         }
-      ],
-      'max_tokens': 200,
+      ]
     })
   };
 

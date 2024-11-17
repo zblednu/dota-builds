@@ -3,10 +3,10 @@ const input = document.querySelector('input');
 input.focus();
 const chatWindow = document.querySelector('.chat-window');
 
-input.addEventListener("keydown", (e) => {
+input.addEventListener("keydown", async function (e) {
   if (e.key === 'Enter' && input.value) {
     addChatMessage(input.value, true);
-    addChatMessage(getBuild(input.value), false);
+    addChatMessage(await getBuild(input.value), false);
 
     chatWindow.scroll({
       top: chatWindow.scrollHeight,

@@ -75,4 +75,5 @@ input {
 .bot-response {
   align-self: flex-start;
   background-color: var(--lighter-grey);
+  white-space: pre-wrap;
 }
